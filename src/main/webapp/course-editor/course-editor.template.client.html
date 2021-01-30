@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course editor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+
+    <link href="course-editor.style.client.css"
+          rel="stylesheet"/>
+
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+
+</head>
+<body>
+<div class="container-fluid">
+    <!--    <h1>Editor</h1>-->
+    <div class="row ss-sticky-header">
+        <div class="col-4 ss-module-col">
+            <i class="fas fa-window-close ss-cancel"></i>
+            <a class="navbar-brand ss-brand" href="#">CS5610 - WebDev</a>
+        </div>
+        <div class="col-8">
+            <ul class="nav nav-pills ss-nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Build</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Theme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="row">
+        <!-- List of Modules  -->
+        <div class="col-4 ss-module-col">
+            <div></div>
+            <ul class="list-group ss-module-list-group">
+                <li class="list-group-item ss-module-list-group-item">
+                    <div class="ss-module-link">
+                        Module 1 - jQuery
+                        <i class="pull-right fas fa-trash"></i>
+                    </div>
+                </li>
+                <li class="list-group-item active">
+                    Module 2 - React
+                    <i class="pull-right fas fa-trash"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 3 - Redux
+                    <i class="pull-right fas fa-trash"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 4 - Native
+                    <i class="pull-right fas fa-trash"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 5 - Angular
+                    <i class="pull-right fas fa-trash"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 6 - Node
+                    <i class="pull-right fas fa-trash"></i>
+                </li>
+                <li class="list-group-item">
+                    Module 7 - Mongo
+                    <i class="pull-right fas fa-trash"></i>
+                </li>
+                <li class="list-group-item">
+                    <i class="pull-right fas fa-plus-circle"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- List of Topics    -->
+        <div class="col-8">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Topic 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Topic 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Topic 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Topic 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
