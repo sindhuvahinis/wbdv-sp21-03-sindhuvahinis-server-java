@@ -10,3 +10,86 @@
 .container {
     padding-top: 68px;
 }
+
+.ss-course-list-table td {
+    white-space: nowrap;
+}
+
+.ss-title {
+    width: 50%;
+}
+
+.ss-owned-by {
+    width: 15%;
+}
+
+.ss-last-modified {
+    width: 15%;
+}
+
+.ss-grip {
+    width: 5%;
+}
+
+.ss-alpha-sort {
+    width: 5%;
+}
+
+.ss-delete-icon {
+    width: 5%;
+}
+
+@media screen and (max-width: 1225px) and (min-width: 1045px) {
+    .ss-alpha-sort{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1045px) and (min-width: 835px) {
+    .ss-alpha-sort{
+        display:none;
+    }
+    .ss-grip{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 835px) and (min-width: 565px) {
+    .ss-alpha-sort{
+        display:none;
+    }
+    .ss-grip{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 565px) and (min-width: 300px) {
+    .ss-alpha-sort{
+        display:none;
+    }
+    .ss-grip{
+        display:none;
+    }
+    .ss-last-modified{
+        display:none;
+    }
+    .ss-owned-by{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .ss-alpha-sort{
+        display:none;
+    }
+    .ss-grip{
+        display:none;
+    }
+    .ss-last-modified{
+        display:none;
+    }
+    .ss-owned-by{
+        display:none;
+    }
+
+}

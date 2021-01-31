@@ -16,137 +16,136 @@
           crossorigin="anonymous"/>
 
     <link href="course-list.style.client.css" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="ss-sticky-nav-bar">
-        <div class="row">
-            <div class="col-1">
-                <i class="fas fa-bars fa-2x"></i>
-            </div>
-            <div class="col-2 d-none d-lg-block">
-                <h4>Dashboard</h4>
-            </div>
-            <div class="col-8">
-                <input class="form-control" placeholder="New Course Title"/>
-            </div>
-            <div class="col-1">
-                <i class="fas fa-plus-circle fa-2x"></i>
-            </div>
+<div class="ss-sticky-nav-bar">
+    <div class="row">
+        <div class="col-1">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="col-2 d-none d-lg-block">
+            <h4>Dashboard</h4>
+        </div>
+        <div class="col-8">
+            <input class="form-control" placeholder="New Course Title"/>
+        </div>
+        <div class="col-1">
+            <i class="fas fa-plus-circle fa-2x"></i>
         </div>
     </div>
+</div>
 
-    <div class="container">
+<div class="container">
     <table class="table table-striped ss-course-list-table">
         <thead>
-            <tr>
-                <th>Title</th>
-                <th>Owned by</th>
-                <th>Last Modified</th>
-                <th><i class="fas fa-grip-horizontal fa-lg"></i></th>
-                <th><i class="fas fa-sort-alpha-down fa-lg"></i></th>
-                <th></th>
-            </tr>
+        <tr>
+            <th class="ss-title">Title</th>
+            <th class="ss-owned-by">Owned by</th>
+            <th class="ss-last-modified">Last Modified</th>
+            <th class="ss-grip"><i class="fas fa-grip-horizontal fa-lg"></i></th>
+            <th class="ss-alpha-sort"><i class="fas fa-sort-alpha-down fa-lg"></i></th>
+            <th class="ss-delete-icon"></th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
-            </tr>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS5610
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
 
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS5610 Web Development Graduate
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
 
-            </tr>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS5500 Software Engineering Graduate
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
 
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
-            </tr>
-
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../course-editor/course-editor.template.client.html">
-                        <i class="fas fa-file-alt"></i>
-                        CS5610
-                    </a>
-                </td>
-                <td>Jose</td>
-                <td>1/25/2021</td>
-                <td></td>
-                <td></td>
-                <td><i class="fas fa-trash"></i></td>
-            </tr>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS4550 Software Engineering Undergraduate
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS4500 Web Development Undergraduate
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS5200 Introduction to Databases
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="ss-title">
+                <a href="../course-editor/course-editor.template.client.html">
+                    <i class="fas fa-file-alt"></i>
+                    CS5610
+                </a>
+            </td>
+            <td class="ss-owned-by">Jose</td>
+            <td class="ss-last-modified">1/25/2021</td>
+            <td class="ss-grip"></td>
+            <td class="ss-alpha-sort"></td>
+            <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+        </tr>
         </tbody>
     </table>
-    </div>
+
+</div>
 </body>
 </html>
