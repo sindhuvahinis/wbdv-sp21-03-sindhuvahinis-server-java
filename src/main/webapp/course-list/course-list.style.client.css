@@ -4,20 +4,9 @@
     position: fixed;
     width: 100% ;
     z-index: 1;
+    color: #f9fdfd;
 }
 
 .container {
     padding-top: 68px;
-    max-width: 100%;
-}
-
-.ss-header-row {
-    background-color: #d2d7d7;
-    padding: 15px 0;
-}
-
-.ss-header-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
 }
