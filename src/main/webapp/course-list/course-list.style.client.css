@@ -1,11 +1,23 @@
 .ss-sticky-nav-bar {
-    background-color: lightblue;
-    padding: 10px;
+    background-color: #464b4f;
+    padding: 15px;
     position: fixed;
     width: 100% ;
     z-index: 1;
 }
 
 .container {
-    padding-top: 58px;
+    padding-top: 68px;
+    max-width: 100%;
+}
+
+.ss-header-row {
+    background-color: #d2d7d7;
+    padding: 15px 0;
+}
+
+.ss-header-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
