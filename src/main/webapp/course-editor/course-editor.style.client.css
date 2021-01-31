@@ -12,26 +12,46 @@ html, body {
 
 .ss-sticky-header {
     background-color: #464b4f;
-    width: 100% ;
+    width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
-    --bs-gutter-x : 0;
+    --bs-gutter-x: 0;
 }
 
-.ss-brand, .ss-brand a:hover {
+.ss-brand-title-header {
+    padding-left: 20px;
+}
+
+.ss-brand {
+    color: #d9d9d9;
+    padding-left: 10px;
+}
+
+.ss-brand-title-header a.ss-brand:hover {
+    color: #f9fdfd;
+}
+
+.ss-cancel-icon {
+    padding: 10px;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.ss-brand-title-header a.ss-cancel-icon:hover {
     color: #f9fdfd;
 }
 
 .ss-nav-pills a {
-    color: #f9fdfd;
+    color: #d9d9d9;
 }
 
 .ss-nav-pills a:hover {
-    color: red;
+    color: #f9fdfd;
 }
 
-.ss-cancel {
-    padding: 10px;
+.ss-topics-nav {
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 .ss-module-col {
@@ -60,14 +80,30 @@ ul.ss-module-list-group {
     background-color: #373b3e;
 }
 
-.ss-module-link.active{
+.ss-module-link.active {
     background-color: #4890e4;
 }
 
-.ss-module-plus-icon {
+a {
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+a:hover  {
+    color: #ffffff;
+}
+
+.ss-module-link a.ss-module-delete-icon:hover {
+    color: #ffffff;
+}
+
+.ss-plus-icon {
     color: #f9fdfd;
+}
+
+.ss-module-plus-icon {
     padding: 10px;
-    margin-left: 20px ;
+    margin-left: 20px;
     margin-right: 20px;
 }
 
@@ -77,6 +113,16 @@ ul.ss-module-list-group {
     background-color: #4c5154;
     color: #e7ecef;
     border-radius: 5px;
-    margin-left: 20px ;
+    margin-left: 20px;
     margin-right: 20px;
+}
+
+.ss-topics-nav-item {
+    background-color: #7a7a7a;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.ss-topics-nav .ss-topics-nav-item-link.active{
+    background-color: #484848;
 }
