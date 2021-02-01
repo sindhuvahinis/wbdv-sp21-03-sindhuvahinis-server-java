@@ -7,13 +7,21 @@
           rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
-    <link href="login.style.client.css" rel="stylesheet">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <link href="login.style.client.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <div class="container">
-    <h1 class="title">Sign In</h1>
-    <form>
+    <div class="ss-sign-in-container">
+        <h1 class="title">Sign In</h1>
         <!--  Username   -->
         <div class="mb-3 row">
             <label for="username"
@@ -64,7 +72,16 @@
                 </div>
             </div>
         </div>
-    </form>
+
+        <div class="mt-20 row">
+            <div class="mt-20 col-sm-5">
+                <a href="../index.html" class="ss-back-option">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to home page
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
