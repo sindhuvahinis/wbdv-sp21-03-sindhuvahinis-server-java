@@ -24,3 +24,11 @@ html, body {
     color: #373b3e;
     text-decoration: none;
 }
+
+.ss-forgot-pass-col a {
+    text-decoration: none;
+}
+
+.ss-sign-up-col a {
+    text-decoration: none;
+}
