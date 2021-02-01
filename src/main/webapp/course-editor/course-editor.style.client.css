@@ -92,8 +92,12 @@ a:hover  {
     color: #ffffff;
 }
 
-.ss-module-link a.ss-module-delete-icon:hover {
-    color: #ffffff;
+.ss-module-delete-icon {
+    padding-top: 5px;
+}
+
+.ss-module-link a.ss-module-delete-icon-link:hover {
+    color: #cc0000;
 }
 
 .ss-plus-icon {
