@@ -2,128 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>Profile - WhiteBoard</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
+
     <link href="profile.style.client.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+
 <body>
-    <div class="container"
+<div class="container">
+    <div class="ss-profile-container">
         <h1 class="title">Profile</h1>
-        <div>
-            <!-- Success alert -->
-            <div class="alert alert-success" role="alert">
-                Profile details are saved successfully!
-            </div>
+        <!-- Success alert -->
+        <div class="alert alert-success" role="alert">
+            Profile details are saved successfully!
+        </div>
 
-            <!-- Failure alert -->
-            <div class="alert alert-danger" role="alert">
-                Profile details have some errors.
-            </div>
+        <!-- Failure alert -->
+        <div class="alert alert-danger" role="alert">
+            Profile details have some errors.
+        </div>
 
-            <!--  Username   -->
-            <div class="mb-3 row">
-                <label for="username"
-                       class="col-sm-2 col-form-label">
-                    Username
-                </label>
-                <div class="col-sm-10">
-                    <input type="text"
-                           readonly
-                           class="form-control"
-                           id="username"
-                           value="Alice"/>
-                </div>
+        <!--  Username   -->
+        <div class="mb-3 row">
+            <label for="username"
+                   class="col-sm-2 col-form-label">
+                Username
+            </label>
+            <div class="col-sm-10">
+                <input type="text"
+                       readonly
+                       class="form-control"
+                       id="username"
+                       value="Alice"/>
             </div>
+        </div>
 
-            <!--  Phone -->
-            <div class="mb-3 row">
-                <label for="phone"
-                       class="col-sm-2 col-form-label">
-                    Phone
-                </label>
-                <div class="col-sm-10">
-                    <input type="tel"
-                           class="form-control"
-                           id="phone"
-                           value="(999) 123-4567"/>
-                </div>
+        <!--  Phone -->
+        <div class="mb-3 row">
+            <label for="phone"
+                   class="col-sm-2 col-form-label">
+                Phone
+            </label>
+            <div class="col-sm-10">
+                <input type="tel"
+                       class="form-control"
+                       id="phone"
+                       value="(999) 123-4567"/>
             </div>
+        </div>
 
-            <!--  Email  -->
-            <div class="mb-3 row">
-                <label for="email"
-                       class="col-sm-2 col-form-label">
-                    Email
-                </label>
-                <div class="col-sm-10">
-                    <input type="email"
-                           class="form-control"
-                           value="alice@wonderland.com"
-                           id="email"/>
-                </div>
+        <!--  Email  -->
+        <div class="mb-3 row">
+            <label for="email"
+                   class="col-sm-2 col-form-label">
+                Email
+            </label>
+            <div class="col-sm-10">
+                <input type="email"
+                       class="form-control"
+                       value="alice@wonderland.com"
+                       id="email"/>
             </div>
+        </div>
 
-            <!--  Role  -->
-            <div class="mb-3 row">
-                <label for="role"
-                       class="col-sm-2 col-form-label">
-                    Role
-                </label>
-                <div class="col-sm-10">
-                    <select id="role" class="form-control">
-                        <option value="faculty" selected="selected">Faculty</option>
-                        <option value="admin">Admin</option>
-                        <option value="student">Student</option>
-                    </select>
-                </div>
+        <!--  Role  -->
+        <div class="mb-3 row">
+            <label for="role"
+                   class="col-sm-2 col-form-label">
+                Role
+            </label>
+            <div class="col-sm-10">
+                <select id="role" class="form-control">
+                    <option value="faculty" selected="selected">Faculty</option>
+                    <option value="admin">Admin</option>
+                    <option value="student">Student</option>
+                </select>
             </div>
+        </div>
 
-            <!--  Date of Birth   -->
-            <div class="mb-3 row">
-                <label for="dob"
-                       class="col-sm-2 col-form-label">
-                    Date of Birth
-                </label>
-                <div class="col-sm-10">
-                    <input type="date"
-                           class="form-control"
-                           title="Please enter your DOB"
-                           value="2021-01-25"
-                           id="dob"/>
-                </div>
+        <!--  Date of Birth   -->
+        <div class="mb-3 row">
+            <label for="dob"
+                   class="col-sm-2 col-form-label">
+                Date of Birth
+            </label>
+            <div class="col-sm-10">
+                <input type="date"
+                       class="form-control"
+                       title="Please enter your DOB"
+                       value="2021-01-25"
+                       id="dob"/>
             </div>
+        </div>
 
-            <!--  Update button   -->
-            <div class="mb-3 row">
-                <label for="update"
-                       class="col-sm-2 col-form-label">
-                </label>
-                <div class="col-sm-10">
-                    <a href="#"
-                       id="update"
-                       class="btn btn-success col-12">
-                        Update
-                    </a>
-                </div>
+        <!--  Update button   -->
+        <div class="mb-3 row">
+            <label for="update"
+                   class="col-sm-2 col-form-label">
+            </label>
+            <div class="col-sm-10">
+                <a href="#"
+                   id="update"
+                   class="btn btn-success col-12">
+                    Update
+                </a>
             </div>
+        </div>
 
-            <!--  Logout button   -->
-            <div class="mb-3 row">
-                <label for="logout"
-                       class="col-sm-2 col-form-label">
-                </label>
-                <div class="col-sm-10">
-                    <a href="../index.html"
-                       id="logout"
-                       class="btn btn-danger col-12">
-                        Logout
-                    </a>
-                </div>
+        <!--  Logout button   -->
+        <div class="mb-3 row">
+            <label for="logout"
+                   class="col-sm-2 col-form-label">
+            </label>
+            <div class="col-sm-10">
+                <a href="../index.html"
+                   id="logout"
+                   class="btn btn-danger col-12">
+                    Logout
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-20 row">
+            <div class="mt-20 col-sm-5">
+                <a href="../course-list/course-list.template.client.html" class="ss-back-option">
+                    <i class="fas fa-arrow-left"></i>
+                    Go to Dashboard
+                </a>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
