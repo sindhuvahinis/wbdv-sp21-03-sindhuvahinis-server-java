@@ -24,3 +24,7 @@ html, body {
     color: #373b3e;
     text-decoration: none;
 }
+
+.ss-login-link-col a {
+    text-decoration: none;
+}
