@@ -53,6 +53,11 @@
     line-height: 40px;
 }
 
+.ss-date-col {
+    font-weight: bold;
+    padding: 1.0rem 0.5rem 0 0.5rem;
+}
+
 @media screen and (max-width: 835px) {
      .ss-dashboard-title {
          display: none;
@@ -141,5 +146,5 @@
 }
 
 .ss-trash-icon-col a.ss-trash-icon:hover {
-    color: #000000;
+    color:  #cc0000;
 }
