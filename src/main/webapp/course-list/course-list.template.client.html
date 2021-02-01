@@ -21,17 +21,21 @@
 <body>
 <div class="ss-sticky-nav-bar">
     <div class="row">
-        <div class="col-1">
-            <i class="fas fa-bars fa-2x"></i>
+        <div class="col-2">
+            <h3 class="title">
+                <i class="fas fa-bars"></i>
+                <span class="ss-dashboard-title">
+                    Dashboard
+                </span>
+            </h3>
         </div>
-        <div class="col-2 d-none d-lg-block">
-            <h4>Dashboard</h4>
-        </div>
-        <div class="col-8">
+        <div class="col-7">
             <input class="form-control" placeholder="New Course Title"/>
         </div>
-        <div class="col-1">
-            <i class="fas fa-plus-circle fa-2x"></i>
+        <div class="col-2">
+            <a href="#" class="ss-plus-icon">
+                <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -41,34 +45,17 @@
         <table class="table table-striped ss-course-list-table">
             <thead>
             <tr>
-                <th class="ss-title">Title</th>
-                <th class="ss-owned-by">Owned by</th>
-                <th class="ss-last-modified">Last Modified</th>
-                <th class="ss-grip"><i class="fas fa-grip-horizontal fa-lg"></i></th>
-                <th class="ss-alpha-sort"><i class="fas fa-sort-alpha-down fa-lg"></i></th>
-                <th class="ss-delete-icon"></th>
+                <th class="ss-title-col">Title</th>
+                <th class="ss-owned-by-col">Owned by</th>
+                <th class="ss-last-modified-col">Last Modified</th>
+                <th class="ss-grip-col"><i class="fas fa-grip-horizontal fa-lg"></i></th>
+                <th class="ss-alpha-sort-col"><i class="fas fa-sort-alpha-down fa-lg"></i></th>
+                <th class="ss-trash-icon-col"></th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td class="ss-title">
-                    <a href="../course-editor/course-editor.template.client.html"
-                       class="ss-course-editor-link">
-                        <i class="fas fa-file-alt ss-file-icon"></i>
-                        <span class="ss-table-content">
-                            CS5610
-                        </span>
-                    </a>
-                </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
-            </tr>
-
-            <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -77,15 +64,40 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
 
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
+                    <a href="../course-editor/course-editor.template.client.html"
+                       class="ss-course-editor-link">
+                        <i class="fas fa-file-alt ss-file-icon"></i>
+                        <span class="ss-table-content">
+                            CS5610 Web Development Undergraduate
+                        </span>
+                    </a>
+                </td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -94,15 +106,19 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
 
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -111,14 +127,19 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
+
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -127,14 +148,19 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
+
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -143,37 +169,46 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
+
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
                         <span class="ss-table-content">
-                            CS5610
+                            CS3200 Database Management Systems
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
 
             <tr>
-                <td>
+                <td colspan="6">
                     Yesterday
                 </td>
             </tr>
 
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -182,11 +217,15 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
 
             <tr>
@@ -196,7 +235,7 @@
             </tr>
 
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -205,15 +244,19 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
 
             <tr>
-                <td class="ss-title">
+                <td class="ss-title-col">
                     <a href="../course-editor/course-editor.template.client.html"
                        class="ss-course-editor-link">
                         <i class="fas fa-file-alt ss-file-icon"></i>
@@ -222,11 +265,15 @@
                         </span>
                     </a>
                 </td>
-                <td class="ss-owned-by">Jose</td>
-                <td class="ss-last-modified">1/25/2021</td>
-                <td class="ss-grip"></td>
-                <td class="ss-alpha-sort"></td>
-                <td class="ss-delete-icon"><i class="fas fa-trash"></i></td>
+                <td class="ss-owned-by-col">Jose</td>
+                <td class="ss-last-modified-col">1/25/2021</td>
+                <td class="ss-grip-col"></td>
+                <td class="ss-alpha-sort-col"></td>
+                <td class="ss-trash-icon-col">
+                    <a href="#" class="ss-trash-icon">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </td>
             </tr>
 
             </tbody>

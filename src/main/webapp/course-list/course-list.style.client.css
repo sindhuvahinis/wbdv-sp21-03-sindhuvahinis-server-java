@@ -16,27 +16,27 @@
     white-space: nowrap;
 }
 
-.ss-title {
+.ss-title-col {
     width: 50%;
 }
 
-.ss-owned-by {
+.ss-owned-by-col {
     width: 15%;
 }
 
-.ss-last-modified {
+.ss-last-modified-col {
     width: 15%;
 }
 
-.ss-grip {
+.ss-grip-col {
     width: 5%;
 }
 
-.ss-alpha-sort {
+.ss-alpha-sort-col {
     width: 5%;
 }
 
-.ss-delete-icon {
+.ss-trash-icon-col {
     width: 5%;
 }
 
@@ -57,64 +57,70 @@
     line-height: 40px;
 }
 
+@media screen and (max-width: 835px) {
+     .ss-dashboard-title {
+         display: none;
+     }
+}
+
 @media screen and (max-width: 1225px) and (min-width: 1045px) {
-    .ss-alpha-sort {
+    .ss-alpha-sort-col {
         display: none;
     }
 }
 
 @media screen and (max-width: 1045px) and (min-width: 835px) {
-    .ss-alpha-sort {
+    .ss-alpha-sort-col {
         display: none;
     }
 
-    .ss-grip {
+    .ss-grip-col {
         display: none;
     }
 }
 
 @media screen and (max-width: 835px) and (min-width: 565px) {
-    .ss-alpha-sort {
+    .ss-alpha-sort-col {
         display: none;
     }
 
-    .ss-grip {
+    .ss-grip-col {
         display: none;
     }
 }
 
 @media screen and (max-width: 565px) and (min-width: 300px) {
-    .ss-alpha-sort {
+    .ss-alpha-sort-col {
         display: none;
     }
 
-    .ss-grip {
+    .ss-grip-col {
         display: none;
     }
 
-    .ss-last-modified {
+    .ss-last-modified-col {
         display: none;
     }
 
-    .ss-owned-by {
+    .ss-owned-by-col {
         display: none;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .ss-alpha-sort {
+    .ss-alpha-sort-col {
         display: none;
     }
 
-    .ss-grip {
+    .ss-grip-col {
         display: none;
     }
 
-    .ss-last-modified {
+    .ss-last-modified-col {
         display: none;
     }
 
-    .ss-owned-by {
+    .ss-owned-by-col {
         display: none;
     }
 
@@ -126,4 +132,18 @@
     bottom:0;
     padding: 20px;
     color: #ca4f40;
+}
+
+.ss-plus-icon {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ss-trash-icon-col a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ss-trash-icon-col a.ss-trash-icon:hover {
+    color: #000000;
 }
