@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ss-sign-up-container {
+    width: 500px;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ss-back-option {
+    color: #373b3e;
+    text-decoration: none;
+}
