@@ -2,7 +2,7 @@
     background-color: #464b4f;
     padding: 15px;
     position: fixed;
-    width: 100% ;
+    width: 100%;
     z-index: 1;
     color: #f9fdfd;
 }
@@ -11,6 +11,7 @@
     padding-top: 68px;
 }
 
+/* Table Styling */
 .ss-course-list-table td {
     white-space: nowrap;
 }
@@ -39,57 +40,90 @@
     width: 5%;
 }
 
+.ss-date {
+    padding-top: 10px;
+}
+
+.ss-course-editor-link {
+    text-decoration: none;
+}
+
+.ss-table-content {
+    color: #373b3e;
+    padding-left: 5px;
+}
+
+.ss-course-list-table tr {
+    line-height: 40px;
+}
+
 @media screen and (max-width: 1225px) and (min-width: 1045px) {
-    .ss-alpha-sort{
-        display:none;
+    .ss-alpha-sort {
+        display: none;
     }
 }
 
 @media screen and (max-width: 1045px) and (min-width: 835px) {
-    .ss-alpha-sort{
-        display:none;
+    .ss-alpha-sort {
+        display: none;
     }
-    .ss-grip{
-        display:none;
+
+    .ss-grip {
+        display: none;
     }
 }
 
 @media screen and (max-width: 835px) and (min-width: 565px) {
-    .ss-alpha-sort{
-        display:none;
+    .ss-alpha-sort {
+        display: none;
     }
-    .ss-grip{
-        display:none;
+
+    .ss-grip {
+        display: none;
     }
 }
 
 @media screen and (max-width: 565px) and (min-width: 300px) {
-    .ss-alpha-sort{
-        display:none;
+    .ss-alpha-sort {
+        display: none;
     }
-    .ss-grip{
-        display:none;
+
+    .ss-grip {
+        display: none;
     }
-    .ss-last-modified{
-        display:none;
+
+    .ss-last-modified {
+        display: none;
     }
-    .ss-owned-by{
+
+    .ss-owned-by {
         display: none;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .ss-alpha-sort{
-        display:none;
-    }
-    .ss-grip{
-        display:none;
-    }
-    .ss-last-modified{
-        display:none;
-    }
-    .ss-owned-by{
-        display:none;
+    .ss-alpha-sort {
+        display: none;
     }
 
+    .ss-grip {
+        display: none;
+    }
+
+    .ss-last-modified {
+        display: none;
+    }
+
+    .ss-owned-by {
+        display: none;
+    }
+
+}
+
+.ss-plus-floating-icon {
+    position:fixed;
+    right:0;
+    bottom:0;
+    padding: 20px;
+    color: #ca4f40;
 }
