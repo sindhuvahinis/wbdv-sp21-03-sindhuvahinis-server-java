@@ -1,0 +1,20 @@
+.ss-action-icons {
+    white-space: nowrap;
+}
+
+.ss-hidden {
+    display: none;
+}
+
+.ss-hide-password {
+    /*-webkit-text-security: disc;*/
+}
+
+.ss-icon {
+    pointer-events: none;
+}
+
+.ss-btn {
+    border: none;
+    background-color: inherit;
+}
