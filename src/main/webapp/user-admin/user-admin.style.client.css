@@ -7,7 +7,7 @@
 }
 
 .ss-hide-password {
-    /*-webkit-text-security: disc;*/
+    -webkit-text-security: disc;
 }
 
 .ss-icon {
