@@ -87,11 +87,11 @@ function renderUsers(users) {
                 <td>${user.role}</td>
                 <td>
                     <span class="pull-right">
-                        <button class="ss-btn ss-delete" title="delete" id=${i}>
-                            <i class="fa-2x fa fa-times ss-icon ss-delete-icon"></i>
+                        <button class="ss-btn ss-delete-btn" title="delete" id=${i}>
+                            <i class="fa-lg fa fa-trash ss-icon ss-row-icon ss-delete-icon"></i>
                         </button>
-                        <button class="ss-btn ss-select" title="select" id=${user._id}>
-                            <i class="fa-2x fa fa-pencil-alt ss-icon"></i>
+                        <button class="ss-btn ss-select-btn" title="select" id=${user._id}>
+                            <i class="fa-lg fa fa-pencil-alt ss-icon ss-row-icon"></i>
                         </button>
                     </span>
                 </td>
@@ -99,9 +99,9 @@ function renderUsers(users) {
         )
     }
 
-    jQuery(".ss-delete")
+    jQuery(".ss-delete-btn")
         .click(deleteUser)
-    jQuery(".ss-select")
+    jQuery(".ss-select-btn")
         .click(selectUser)
 }
 
@@ -119,7 +119,7 @@ function main() {
     $createBtn = $(".ss-create-btn")
     $updateBtn = $(".ss-update-btn")
 
-     $updateBtn.click(updateUser)
+    $updateBtn.click(updateUser)
 
     $createBtn.click(() => {
             createUser({

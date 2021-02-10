@@ -1,9 +1,32 @@
-.ss-action-icons {
-    white-space: nowrap;
+.ss-title-header {
+    background-color: #464b4f;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    color: #f9fdfd;
+    text-align: center;
 }
 
-.ss-hidden {
-    display: none;
+.container {
+    padding-top: 75px;
+}
+
+.ss-table tr {
+    line-height: 40px;
+}
+
+.ss-table thead,th {
+    position: sticky;
+    top: 0;
+}
+
+.ss-row-icon {
+    padding: 5px;
+}
+
+.ss-action-icons {
+    white-space: nowrap;
 }
 
 .ss-hide-password {
@@ -17,4 +40,12 @@
 .ss-btn {
     border: none;
     background-color: inherit;
+}
+
+.ss-delete-btn {
+    color: #ff5050;
+}
+
+.ss-delete-btn:hover {
+    color: #990000;
 }
