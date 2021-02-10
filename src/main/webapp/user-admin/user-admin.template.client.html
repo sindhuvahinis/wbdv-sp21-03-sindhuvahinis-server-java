@@ -14,8 +14,65 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossorigin="anonymous"/>
 
+    <link href="user-admin.style.client.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- scripts   -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+    </script>
+
+    <script src="../services/user.service.client.js"></script>
+
 </head>
 <body>
+<div class="container">
+    <h1>User admin</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+        <tr class="ss-form">
+            <th><input placeholder="Username" class="form-control ss-username-fld"/></th>
+            <th><input placeholder="Password" class="form-control ss-password-fld"/></th>
+            <th><input placeholder="First Name" class="form-control ss-firstname-fld"/></th>
+            <th><input placeholder="Last Name" class="form-control ss-lastname-fld"/></th>
+            <th>
+                <select class="form-control ss-role-fld">
+                    <option value="FACULTY" selected="selected">Faculty</option>
+                    <option value="STUDENT">Student</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+            </th>
+            <th>
+                    <span class="fa-pull-right ss-action-icons">
+                        <button class="ss-btn ss-search-btn" title="search">
+                            <i class="fas fa-search fa-2x ss-icon"></i>
+                        </button>
+                        <button class="ss-btn ss-create-btn" title="create">
+                            <i class="fas fa-plus-circle fa-2x ss-icon"></i>
+                        </button>
+                        <button class="ss-btn ss-update-btn" title="update">
+                            <i class="fas fa-check-circle fa-2x ss-icon"></i>
+                        </button>
+                    </span>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody class="ss-tbody">
+        </tbody>
+    </table>
+</div>
+
+<script src="user-admin.controller.client.js"></script>
 
 </body>
 </html>
