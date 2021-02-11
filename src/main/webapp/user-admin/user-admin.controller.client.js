@@ -31,7 +31,7 @@ function selectUser(event) {
     var selectBtn = jQuery(event.target)
     var theId = selectBtn.attr("id")
     selectedUser = users.find(user => user._id === theId)
-    console.log(selectUser.username)
+    console.log(selectedUser.username)
     usernameFld.val(selectedUser.username)
     passwordFld.val(selectedUser.password)
     firsNameFld.val(selectedUser.first_name)
@@ -45,6 +45,8 @@ function updateUser() {
     selectedUser.first_name = firsNameFld.val()
     selectedUser.last_name = lastNameFld.val()
     selectedUser.role = roleFld.val()
+
+    console.log(selectedUser)
 
     userService.updateUser(selectedUser._id, selectedUser).then(status => {
         console.log(status)

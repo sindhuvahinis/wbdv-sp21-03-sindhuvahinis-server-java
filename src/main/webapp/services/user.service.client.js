@@ -30,12 +30,16 @@ function UserService() {
     }
 
     function updateUser(userId, user) {
+        console.log('yes')
+        console.log(user);
+
         return fetch(`${self.url}/${userId}`, {
             method: 'PUT',
-            headers: {'content-type': 'application-json'},
+            headers: {
+                'content-type': 'application/json'
+            },
             body: JSON.stringify(user)
         }).then(response => response.json())
-
     }
 
     function deleteUser(userId) {
