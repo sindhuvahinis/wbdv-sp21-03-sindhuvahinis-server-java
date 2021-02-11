@@ -24,7 +24,7 @@
     line-height: 40px;
 }
 
-.ss-table thead,th {
+.ss-table thead, th {
     position: sticky;
     top: 0;
 }
@@ -56,4 +56,32 @@
 
 .ss-delete-btn:hover {
     color: #990000;
+}
+
+.ss-create-btn {
+    color: #00b300;
+}
+
+.ss-create-btn:hover {
+    color: #006600;
+}
+
+.ss-update-btn {
+    color: #0044cc;
+}
+
+.ss-update-btn:hover {
+    color: #002266;
+}
+
+.ss-select-btn {
+    color: #5900b3;
+}
+
+.ss-select-btn:hover {
+    color: #330066;
+}
+
+.ss-search-btn {
+    color:  #595959;
 }
