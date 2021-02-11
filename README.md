@@ -1,3 +1,9 @@
+# WEBDEV Assignment 2
+
+- Continuation of Assignment 1
+- Included User admin page. Link is avaliable in index.html
+- Admin page is not responsive to the screen width
+
 # WEBDEV Assignment 1
 
 ## About:
