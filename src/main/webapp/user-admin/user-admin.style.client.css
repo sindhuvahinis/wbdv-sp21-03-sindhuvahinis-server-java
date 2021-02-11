@@ -12,6 +12,14 @@
     padding-top: 75px;
 }
 
+.ss-username-col, .ss-password-col, .ss-firstname-col, .ss-lastname-col {
+    width: 20%;
+}
+
+.ss-role-col {
+    width: 10%;
+}
+
 .ss-table tr {
     line-height: 40px;
 }

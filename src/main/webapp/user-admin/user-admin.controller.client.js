@@ -47,6 +47,7 @@ function updateUser() {
     selectedUser.role = roleFld.val()
 
     userService.updateUser(selectedUser._id, selectedUser).then(status => {
+        console.log(status)
         var index = users.findIndex(user => user._id === selectedUser._id)
         users[index] = selectedUser
         renderUsers(users)
@@ -61,14 +62,12 @@ function updateUser() {
 }
 
 function deleteUser(event) {
-    console.log(event.target)
     var deleteBtn = jQuery(event.target)
     var theIndex = deleteBtn.attr("id")
-    console.log(theIndex)
-    console.log(users[theIndex])
     var theId = users[theIndex]._id
 
     userService.deleteUser(theId).then(function (status) {
+        console.log(status)
         users.splice(theIndex, 1)
         renderUsers(users)
     })

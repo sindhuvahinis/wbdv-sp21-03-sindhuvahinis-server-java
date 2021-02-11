@@ -41,6 +41,6 @@ function UserService() {
     function deleteUser(userId) {
         return fetch(`${self.url}/${userId}`, {
             method: 'DELETE'
-        })
+        }).then(response => response.status)
     }
 }
