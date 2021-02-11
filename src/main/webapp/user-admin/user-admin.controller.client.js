@@ -79,12 +79,12 @@ function renderUsers(users) {
         var user = users[i]
         theTableBody.prepend(`
             <tr>
-                <td>${user.username}</td>
-                <td class="ss-hide-password">${user.password}</td>
-                <td>${user.first_name}</td>
-                <td>${user.last_name}</td>
-                <td>${user.role}</td>
-                <td>
+                <td class="ss-username-col">${user.username}</td>
+                <td class="ss-password-col ss-hide-password">${user.password}</td>
+                <td class="ss-firstname-col">${user.first_name}</td>
+                <td class="ss-lastname-col">${user.last_name}</td>
+                <td class="ss-role-col">${user.role}</td>
+                <td class="ss-action-icons-col">
                     <span class="pull-right">
                         <button class="ss-btn ss-delete-btn" title="delete" id=${i}>
                             <i class="fa-lg fa fa-trash ss-icon ss-row-icon ss-delete-icon"></i>

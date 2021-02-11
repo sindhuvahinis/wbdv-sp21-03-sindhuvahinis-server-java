@@ -13,11 +13,15 @@
 }
 
 .ss-username-col, .ss-password-col, .ss-firstname-col, .ss-lastname-col {
-    width: 20%;
+    width: 19%;
 }
 
 .ss-role-col {
     width: 10%;
+}
+
+.ss-action-icons-col {
+    width: 14%;
 }
 
 .ss-table tr {
@@ -72,6 +76,10 @@
 .ss-btn {
     border: none;
     background-color: inherit;
+}
+
+.ss-btn:focus {
+    outline: none;
 }
 
 .ss-delete-btn {
