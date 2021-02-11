@@ -1,7 +1,7 @@
 .ss-title-header {
     background-color: #464b4f;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 1;
     color: #f9fdfd;
@@ -9,7 +9,7 @@
 }
 
 .container {
-    padding-top: 75px;
+    /*padding-top: 75px;*/
 }
 
 .ss-username-col, .ss-password-col, .ss-firstname-col, .ss-lastname-col {
@@ -24,9 +24,33 @@
     line-height: 40px;
 }
 
+.ss-table {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.ss-table thead {
+    flex: 0 0 auto;
+    background-color: #f9fdfd;
+}
+
 .ss-table thead, th {
     position: sticky;
     top: 0;
+}
+
+.ss-table tbody {
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ss-table tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
 }
 
 .ss-row-icon {
@@ -83,5 +107,5 @@
 }
 
 .ss-search-btn {
-    color:  #595959;
+    color: #595959;
 }
