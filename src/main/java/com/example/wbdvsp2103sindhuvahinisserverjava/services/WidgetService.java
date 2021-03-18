@@ -9,18 +9,7 @@ import java.util.List;
 
 @Service
 public class WidgetService {
-    private List<Widget> widgets = new ArrayList<Widget>();
-
-    {
-        Widget w1 = new Widget(123l, "HEADING", 1, "Welcome to Widgets", "604991a69fcc120017b7dd6c");
-        Widget w2 = new Widget(124l, "PARAGRAPH", 1, "This is a paragraph", "604991a69fcc120017b7dd6c");
-        Widget w3 = new Widget(125l, "HEADING", 1, "Welcome to WebDev", "604991a69fcc120017b7dd6c");
-        Widget w4 = new Widget(126l, "PARAGRAPH", 1, "Lorem ipsum", "ABC126");
-        widgets.add(w1);
-        widgets.add(w2);
-        widgets.add(w3);
-        widgets.add(w4);
-    }
+    private List<Widget> widgets = new ArrayList<>();
 
     // Implement CRUD Operations
     public Widget createWidgetForTopic(Widget widget) {
@@ -35,7 +24,7 @@ public class WidgetService {
     }
 
     public List<Widget> findWidgetsForTopic(String topicId) {
-        List<Widget> ws = new ArrayList<Widget>();
+        List<Widget> ws = new ArrayList<>();
         for (Widget w : widgets) {
             if (w.getTopicId().equals(topicId)) {
                 ws.add(w);
