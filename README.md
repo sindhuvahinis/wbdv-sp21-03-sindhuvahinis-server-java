@@ -1,3 +1,10 @@
+# WEBDEV Assignment 5 - REST
+- Implemented widget APIs in MVC pattern
+- widgets POST, PUT, GET and DELETE apis in widgetcontroller
+- widget object in model package
+- widget-service which performs creating, updating and deleting and finding widgets
+- Used RestController and cross origin is allowed for the purpose of testing alone
+
 # WEBDEV Assignment 2
 
 - Continuation of Assignment 1
