@@ -18,7 +18,8 @@ public class WidgetService {
     WidgetRepository repository;
 
     // Implement CRUD Operations
-    public Widget createWidgetForTopic(Widget widget) {
+    public Widget createWidgetForTopic(String tid, Widget widget) {
+        widget.setTopicId(tid);
         return repository.save(widget);
     }
 
@@ -41,7 +42,6 @@ public class WidgetService {
         if (widgetByIdOptional.isPresent()) {
             Widget originalWidget = widgetByIdOptional.get();
 
-            //TODO: copy all other fields
             originalWidget.setWidgetOrder(widget.getWidgetOrder());
             originalWidget.setText(widget.getText());
             originalWidget.setSrc(widget.getSrc());
@@ -59,11 +59,15 @@ public class WidgetService {
             repository.save(originalWidget);
             return 1;
         }
-        return -1;
+        return 0;
     }
 
     public Integer deleteWidget(Long id) {
-        repository.deleteById(id);
-        return 1;
+        if (findWidgetById(id) == null) {
+            return 0;
+        } else {
+            repository.deleteById(id);
+            return 1;
+        }
     }
 }
