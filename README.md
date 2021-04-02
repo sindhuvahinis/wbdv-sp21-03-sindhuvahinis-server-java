@@ -1,3 +1,8 @@
+# WEBDEV Assignment 6 - MySQL
+- Widget service connects to mySQL
+- Using ORM and JPA for tables and columns creation
+- Widget's CRUD service has MySQL connection, so data is persisted.
+
 # WEBDEV Assignment 5 - REST
 - Implemented widget APIs in MVC pattern
 - widgets POST, PUT, GET and DELETE apis in widgetcontroller
