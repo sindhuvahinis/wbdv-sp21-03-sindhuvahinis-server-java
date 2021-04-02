@@ -1,19 +1,29 @@
 package com.example.wbdvsp2103sindhuvahinisserverjava.models;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String type;
-    private Integer size;
-    private String text;
+
     private String topicId;
     private String name;
+    private String type;
     private Integer widgetOrder;
-    private String url;
+    private String text;
+    private String src;
+    private Integer size;
     private Integer width;
     private Integer height;
     private String cssClass;
     private String style;
     private String value;
+    private Boolean ordered;
 
     public Widget() {
     }
@@ -27,7 +37,7 @@ public class Widget {
     }
 
     public Widget(Long id, String type, Integer size, String text, String topicId, String name,
-                  Integer widgetOrder, String url, Integer width, Integer height, String cssClass,
+                  Integer widgetOrder, String src, Integer width, Integer height, String cssClass,
                   String style, String value) {
         this.id = id;
         this.type = type;
@@ -36,7 +46,7 @@ public class Widget {
         this.topicId = topicId;
         this.name = name;
         this.widgetOrder = widgetOrder;
-        this.url = url;
+        this.src = src;
         this.width = width;
         this.height = height;
         this.cssClass = cssClass;
@@ -100,12 +110,12 @@ public class Widget {
         this.widgetOrder = widgetOrder;
     }
 
-    public String getUrl() {
-        return url;
+    public String getSrc() {
+        return src;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setSrc(String url) {
+        this.src = url;
     }
 
     public Integer getWidth() {
@@ -146,5 +156,13 @@ public class Widget {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
     }
 }
